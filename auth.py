@@ -2,7 +2,6 @@ import bcrypt
 
 MAX_LOGIN_ATTEMPTS = 5
 
-
 def verify_password(password, password_hash):
     return bcrypt.checkpw(password, password_hash)
 
